@@ -44,10 +44,10 @@ var bot = new builder.UniversalBot(connector, [
 ]);
 
 
-// Install a custom recognizer to look for user saying 'help' or 'goodbye'.
+// Custom recognizer
 bot.recognizer({
   recognize: function (context, done) {
-  var intent = { score: 0.0 };
+        var intent = { score: 0.0 };
 
         if (context.message.text) {
             switch (context.message.text.toLowerCase()) {
